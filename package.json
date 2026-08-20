@@ -14,7 +14,8 @@
     "test": "npm --prefix cli test",
     "typecheck": "npm --prefix cli run typecheck",
     "previews": "npm --prefix cli run previews",
-    "play": "npx --no-install novaplayer"
+    "play": "npx --no-install novaplayer",
+    "clean": "rm -rf cli/dist"
   },
   "keywords": [
     "music",
