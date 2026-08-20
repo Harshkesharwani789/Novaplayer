@@ -1,0 +1,74 @@
+{
+  "name": "novaplayer",
+  "version": "2.0.0",
+  "description": "Terminal-first music workstation for local library management, playback, organization, and analytics.",
+  "type": "module",
+  "bin": {
+    "novaplayer": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "preview",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./library": "./src/library/library.ts",
+    "./types": "./src/library/types.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx src/index.tsx",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "previews": "tsx scripts/render-previews.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "music",
+    "audio",
+    "player",
+    "cli",
+    "terminal",
+    "tui",
+    "local-first",
+    "sqlite",
+    "analytics",
+    "playlists"
+  ],
+  "author": "Harsh Kesharwani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshkesharwani789/Novaplayer.git",
+    "directory": "cli"
+  },
+  "homepage": "https://github.com/Harshkesharwani789/Novaplayer#readme",
+  "bugs": {
+    "url": "https://github.com/Harshkesharwani789/Novaplayer/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@inkjs/ui": "^2.0.0",
+    "env-paths": "^4.0.0",
+    "execa": "^9.6.1",
+    "ink": "^7.0.5",
+    "react": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "ink-testing-library": "^4.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  }
+}

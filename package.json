@@ -1,0 +1,32 @@
+{
+  "name": "novaplayer-monorepo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "NovaPlayer \u2014 a terminal-first music workstation for local libraries, playback, organization, and analytics.",
+  "type": "module",
+  "workspaces": [
+    "cli"
+  ],
+  "scripts": {
+    "dev": "npm --prefix cli run dev",
+    "build": "npm --prefix cli run build",
+    "start": "npm --prefix cli run start",
+    "test": "npm --prefix cli test",
+    "typecheck": "npm --prefix cli run typecheck",
+    "previews": "npm --prefix cli run previews",
+    "play": "npx --no-install novaplayer"
+  },
+  "keywords": [
+    "music",
+    "audio",
+    "terminal",
+    "tui",
+    "cli",
+    "local-first",
+    "sqlite",
+    "analytics",
+    "mpv"
+  ],
+  "author": "Harsh Kesharwani",
+  "license": "MIT"
+}

@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+dist/
+build/
+.next/
+out/
+
+# Environment and Secrets
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+soundcli.log*
+debug.log
+
+# Operating System & IDE
+.DS_Store
+*.pem
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local Music and Cache (never commit personal media)
+*.mp3
+*.m4a
+*.opus
+*.flac
+*.wav
+*.part
+*.ytdl
+downloads/
+cache/
+*.db
+*.sqlite
+*.sqlite3
+*.tmp
